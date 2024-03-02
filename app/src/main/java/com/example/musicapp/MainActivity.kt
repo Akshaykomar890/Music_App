@@ -18,7 +18,6 @@ import kotlin.math.E
 class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
     lateinit var Myadapter:NewAdapter
-    val s =EachCategory()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

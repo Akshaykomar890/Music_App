@@ -8,7 +8,9 @@
     <ImageView
         android:id="@+id/onClickImageView"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +22,6 @@
             android:id="@+id/onClickSongName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song Name"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -29,10 +30,9 @@
             android:id="@+id/onClickSongArtist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song Artist"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="2dp"
             />
     </LinearLayout>
 

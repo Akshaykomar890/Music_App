@@ -27,11 +27,12 @@
         android:layout_marginStart="25dp"/>
         <com.google.android.material.divider.MaterialDivider
             android:id="@+id/materialDivider"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="1dp"
             app:dividerColor="@color/black"
             android:layout_marginVertical="8dp"
-            android:layout_below="@id/nameTextView1"/>
+            android:layout_below="@id/nameTextView1"
+            android:layout_centerInParent="true"/>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
