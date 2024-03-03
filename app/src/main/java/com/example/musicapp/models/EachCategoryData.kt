@@ -1,4 +1,4 @@
-package com.example.musicapp
+package com.example.musicapp.models
 
 data class EachCategoryData(
     val id:String,

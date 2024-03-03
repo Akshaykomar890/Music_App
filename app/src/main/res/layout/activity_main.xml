@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".mainActivity.MainActivity"
     android:background="@color/white">
     <LinearLayout
         android:id="@+id/welcomelayout"
@@ -15,26 +15,27 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp">
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/music_icon"/>
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="40dp"
+            android:src="@drawable/dehze"
+            android:padding="4dp"/>
 
         <TextView
+            android:fontFamily="@font/kumbh_sans"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Welcome back"
             android:textSize="24sp"
-            android:textStyle="bold"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_marginStart="50dp"
             android:textColor="@color/black"/>
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/dehze"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/music_icon"
             android:layout_gravity="end"
-            android:layout_marginStart="40dp"/>
+            android:padding="3dp"
+            android:layout_marginStart="@dimen/_15sdp"/>
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
@@ -48,10 +49,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp">
             <TextView
+                android:fontFamily="@font/kumbh_sans"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Categories"
-                android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="@color/black"/>
             <androidx.recyclerview.widget.RecyclerView
@@ -59,12 +60,5 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/categorieRecyclerView"/>
         </LinearLayout>
-
-
-
     </ScrollView>
-
-
-
-
 </RelativeLayout>

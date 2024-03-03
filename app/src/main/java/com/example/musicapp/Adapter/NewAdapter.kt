@@ -1,26 +1,17 @@
 package com.example.musicapp.Adapter
 
-import android.content.ContentValues.TAG
-import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.RoundedCorner
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
-import com.example.musicapp.CategoryData
-import com.example.musicapp.EachCategory
-import com.example.musicapp.MainActivity
+import com.example.musicapp.models.CategoryData
+import com.example.musicapp.mainActivity.EachCategory
 import com.example.musicapp.R
-import kotlin.coroutines.coroutineContext
 
 class NewAdapter(val categoryList:List<CategoryData>)
     :RecyclerView.Adapter<NewAdapter.MyViewHolder>() {
