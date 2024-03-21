@@ -59,6 +59,8 @@ dependencies {
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
 
-    //animation
-        implementation ("com.airbnb.android:lottie:6.4.0")
+    //exoplayer
+    implementation("androidx.media3:media3-exoplayer:1.3.0")
+    implementation("androidx.media3:media3-exoplayer-dash:1.3.0")
+    implementation("androidx.media3:media3-ui:1.3.0")
 }
