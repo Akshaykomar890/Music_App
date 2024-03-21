@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
+       <!--<com.google.android.material.button.MaterialButton
             android:id="@+id/back_button"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="@dimen/_40sdp"
@@ -31,7 +31,7 @@
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="@dimen/_20sdp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck" /> -->
 
         <TextView
             android:layout_width="141dp"
@@ -61,7 +61,7 @@
         <TextView
             android:id="@+id/songName"
             android:layout_width="wrap_content"
-            android:layout_height="26dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/kumbh_sans"
             android:text="Hasi"
             android:textSize="24sp"
@@ -91,6 +91,7 @@
         android:padding="@dimen/_5sdp">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/heartButton"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
@@ -104,24 +105,6 @@
             android:padding="@dimen/_20sdp"
             app:cornerRadius="50dp"
             app:icon="@drawable/heart"
-            app:iconGravity="textStart"
-            app:iconPadding="0dp"
-            app:iconSize="@dimen/_20sdp"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:backgroundTint="@color/white"
-            android:insetLeft="0dp"
-            android:insetTop="0dp"
-            android:insetRight="0dp"
-            android:insetBottom="2dp"
-            app:cornerRadius="50dp"
-            app:icon="@drawable/share"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="@dimen/_20sdp"

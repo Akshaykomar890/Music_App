@@ -1,10 +1,15 @@
 package com.example.musicapp.mainActivity
 
 import android.content.Intent
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
+import android.widget.PopupMenu
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.musicapp.Adapter.NewAdapter
+import com.example.musicapp.R
 import com.example.musicapp.databinding.ActivityMainBinding
 import com.example.musicapp.models.CategoryData
 import com.google.firebase.firestore.FirebaseFirestore
@@ -18,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getCategories()
+       
     }
 
 

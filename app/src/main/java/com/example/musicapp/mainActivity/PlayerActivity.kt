@@ -5,6 +5,7 @@ import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.annotation.OptIn
 import androidx.media3.common.MediaItem
 import androidx.media3.common.util.UnstableApi
@@ -29,11 +30,17 @@ class PlayerActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.backButton.setOnClickListener {
+       /* binding.backButton.setOnClickListener {
             val intent = Intent(this@PlayerActivity, EachCategory::class.java)
             startActivity(intent)
             finish()
-        }
+        }*/
+
+
+
+       binding.heartButton.setOnClickListener {
+           Toast.makeText(this@PlayerActivity,"Saved to favorites",Toast.LENGTH_SHORT).show()
+       }
 
         binding.songName.text = category.name
         binding.songArtist.text = category.subtitle
@@ -48,11 +55,6 @@ class PlayerActivity : AppCompatActivity() {
         player.setMediaItem(mediaItem)
         player.prepare()
         player.play()
-
-
-
-
-
 
    }
     override fun onDestroy() {
