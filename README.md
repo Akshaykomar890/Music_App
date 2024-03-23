@@ -1,4 +1,4 @@
-**Music App (Under Development)**
+**Music App**
 
 ---
 
@@ -18,12 +18,19 @@ This repository contains a "Music App" developed using Firebase for backend func
 ◉Firebase integration for user authentication and data storage
 
 ---
-**Status:-**
+
+**ScreenShots:-**
+
+**>Main Screen:-**
+
+![1711184464694](https://github.com/Akshaykomar890/Music_App/assets/146421342/39699c5d-d933-406d-8561-207135e46fde)
+
+**>PlayerScreen:-**
+
+![1711184575064](https://github.com/Akshaykomar890/Music_App/assets/146421342/804c2b02-a45f-48fa-bc25-40869a49f229)
 
 
-This app is currently under development and is not fully completed. New features and improvements are being added regularly.
 
----
 
 **Getting Started:-**
 
