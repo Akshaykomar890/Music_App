@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.example.musicapp.databinding.ActivityPlayerBinding
+import com.example.musicapp.models.CategoryData
 import com.example.musicapp.models.EachCategoryData
 import java.lang.Exception
 
@@ -22,6 +23,7 @@ class PlayerActivity : AppCompatActivity() {
     lateinit var player:ExoPlayer
     companion object{
        lateinit var category:EachCategoryData
+       lateinit var getData:CategoryData
 
     }
    @OptIn(UnstableApi::class) override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +42,7 @@ class PlayerActivity : AppCompatActivity() {
 
        binding.heartButton.setOnClickListener {
            Toast.makeText(this@PlayerActivity,"Saved to favorites",Toast.LENGTH_SHORT).show()
+
        }
 
         binding.songName.text = category.name

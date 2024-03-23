@@ -20,9 +20,9 @@ class NewAdapter(val categoryList:List<CategoryData>)
         interface onItemClickLister{
             fun onItemClick(position: Int)
         }
-    fun setItemClickListner(listner:onItemClickLister){
+         fun setItemClickListner(listner:onItemClickLister){
         myListner = listner
-    }
+         }
 
 
     class MyViewHolder(itemView:View,listner:onItemClickLister):RecyclerView.ViewHolder(itemView){

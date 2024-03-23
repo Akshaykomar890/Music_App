@@ -39,11 +39,13 @@
             android:layout_marginStart="@dimen/_15sdp"/>
     </LinearLayout>
     <ScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_below="@id/welcomelayout">
         <LinearLayout
+            android:id="@+id/category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -62,4 +64,50 @@
                 android:id="@+id/categorieRecyclerView"/>
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/trending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/scroll"
+        android:layout_marginStart="10dp">
+    <TextView
+        android:fontFamily="@font/kumbh_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trendingRecyclerView"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/topCharts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/trending"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:fontFamily="@font/kumbh_sans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TopCharts"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/topChartsRecyclerView"/>
+    </LinearLayout>
+
+
+
+
 </RelativeLayout>
